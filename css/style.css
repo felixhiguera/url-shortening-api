@@ -1,0 +1,224 @@
+:root {
+    /* ## Colors
+
+### Primary */
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    /* ### Secondary */
+    --Red: hsl(0, 87%, 67%);
+    /* ### Neutral */
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* 62.5% = 10px */
+    /* 112.5% =18px */
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+
+header .hamburger {
+    justify-self: flex-end;
+}
+
+.first-section {}
+
+.first-section .first-image {
+    display: flex;
+    justify-content: center;
+}
+
+.first-section .first-image img {
+    width: 90%;
+    height: 90%;
+}
+
+.first-text {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.first-section .first-text h1 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.first-section .first-text p {
+    font-size: 1.4rem;
+    color: var(--Gray);
+    text-align: center;
+}
+
+.first-section .first-text button {
+    color: white;
+    background-color: var(--Cyan);
+    width: 10rem;
+    height: 4rem;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+.url-form {
+    min-width: 290px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-image: url('/images/bg-shorten-mobile.svg');
+    background-color: var(--Dark-Violet);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.url-form input {
+    margin: 1rem;
+    border-radius: 5px;
+    height: 40px;
+    color: var(--Gray);
+}
+
+.url-form .url-button {
+    background-color: var(--Cyan);
+    color: black;
+}
+
+.advance-section {
+    margin: 3rem auto;
+    min-width: 320px;
+    text-align: center;
+}
+
+.advance-section h2 {
+    font-size: 1.6rem;
+    color: var(--Dark-Violet);
+}
+
+.advance-section p {
+    font-size: 1.2rem;
+    color: var(--Gray);
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+    background-color: #f0f1f6;
+    margin: 0 auto;
+}
+
+.card-format {
+    background-color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-top: 4rem;
+    margin: 2rem;
+}
+
+.cards .brand-recognition {
+    position: relative;
+}
+
+.card-format .brand-image {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 10px);
+}
+
+.cards .detailed-records {
+    position: relative;
+}
+
+.card-format .detailed-image {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 10px);
+}
+
+.cards .fully-customizable {
+    position: relative;
+}
+
+.card-format .fully-image {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 10px);
+}
+
+.card-format .card-image img {
+    z-index: -1;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--Dark-Violet);
+}
+
+.boost-section {
+    background-image: url('/images/bg-boost-mobile.svg');
+    background-color: var(--Dark-Violet);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boost-section h2 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.boost-section button {
+    font-size: 1.4rem;
+    margin: 2rem;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: var(--Very-Dark-Violet);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.footer .logo {
+    fill: green;
+}
+
+.footer h3 {
+    color: white;
+}
+
+.footer a {
+    color: var(--Gray);
+    display: block;
+    text-decoration: none;
+}
